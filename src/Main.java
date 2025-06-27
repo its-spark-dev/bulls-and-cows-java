@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         //NumberGenerator g; // NumberGenerator type 인 g 이름을 가진 variable declare
         //int a; // integer type 인 a 이름을 가진 variable declare
-        //int b = 3; // integer type 인 b 이름을 가진 variable 에 3인 ㄹ;터럴 값을 copy 연산
+        //int b = 3; // integer type 인 b 이름을 가진 variable 에 3인 리터럴 값을 copy 연산
 
         //NumberGenerator c = new NumberGenerator(); // NumberGenerator type 인 c 이름을 가진 variant를 선언 해주고 NumberGenerator 인스턴스화 해주고
         // 인스턴스 주소를 c 에 카피연산
