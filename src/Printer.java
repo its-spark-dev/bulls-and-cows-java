@@ -9,9 +9,8 @@ public class Printer {
     }
 
 
-    public void win() {
+    public void displayWin() {
         System.out.println("You won in " + inning + "attempts!");
-        System.exit(0);
     }
 
     // 숫자 야구는 진다는 개념이 없고, 숫자를 맞추는 것 까지 얼마나 오래 걸렸냐는 것만 판단 함.

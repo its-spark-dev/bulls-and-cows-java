@@ -46,7 +46,7 @@ public class Referee {
 
 
     // 아래는 입력받은 문자열을 처리하는 과정 중 하나, 길이 판단.
-    public boolean lengthVerify (String input, int length) {
+    public boolean lengthVerify(String input, int length) {
         if (input.length() == length) {
             return true;
         } else {

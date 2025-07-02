@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fdce6be-ece7-4ac4-a421-8563e98f23e3" name="Changes" comment="Add method to prompt and validate game length input">
+    <list default="true" id="1fdce6be-ece7-4ac4-a421-8563e98f23e3" name="Changes" comment="Add method to display victory message">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Referee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Referee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +86,7 @@
       <updated>1747080941295</updated>
       <workItem from="1747080942620" duration="19284000" />
       <workItem from="1751006298458" duration="1519000" />
-      <workItem from="1751378473645" duration="5124000" />
+      <workItem from="1751378473645" duration="7690000" />
     </task>
     <task id="LOCAL-00001" summary="Add methods to validate String length and convert to int array">
       <option name="closed" value="true" />
@@ -102,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751425257112</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add method to display victory message">
+      <option name="closed" value="true" />
+      <created>1751426157261</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1751426157261</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +121,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add methods to validate String length and convert to int array" />
     <MESSAGE value="Add method to prompt and validate game length input" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add method to prompt and validate game length input" />
+    <MESSAGE value="Add method to display victory message" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add method to display victory message" />
   </component>
 </project>
