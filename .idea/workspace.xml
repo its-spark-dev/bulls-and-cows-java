@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fdce6be-ece7-4ac4-a421-8563e98f23e3" name="Changes" comment="Add methods to validate String length and convert to int array">
+    <list default="true" id="1fdce6be-ece7-4ac4-a421-8563e98f23e3" name="Changes" comment="Add method to prompt and validate game length input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Printer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +84,7 @@
       <updated>1747080941295</updated>
       <workItem from="1747080942620" duration="19284000" />
       <workItem from="1751006298458" duration="1519000" />
-      <workItem from="1751378473645" duration="4232000" />
+      <workItem from="1751378473645" duration="5124000" />
     </task>
     <task id="LOCAL-00001" summary="Add methods to validate String length and convert to int array">
       <option name="closed" value="true" />
@@ -94,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751424347469</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add method to prompt and validate game length input">
+      <option name="closed" value="true" />
+      <created>1751425257112</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751425257112</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add methods to validate String length and convert to int array" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add methods to validate String length and convert to int array" />
+    <MESSAGE value="Add method to prompt and validate game length input" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add method to prompt and validate game length input" />
   </component>
 </project>
