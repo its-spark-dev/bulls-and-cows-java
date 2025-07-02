@@ -1,5 +1,6 @@
 import java.util.Date;
 import java.util.Random;
+
 public class NumberGenerator {
     public int[] getNumbers(int length) {
         int[] result = new int[length];

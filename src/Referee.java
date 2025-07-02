@@ -7,7 +7,7 @@ public class Referee {
 
     // 3. 저장된 변수들을 리턴하여, 메인 메소드에서 프린터에게 넘기기
 
-    public int getStrikeCount (int[] randomNumber, int[] userNumber) {
+    public int getStrikeCount(int[] randomNumber, int[] userNumber) {
         int strike = 0;
         for (int i = 0; i < randomNumber.length; i++) {
             for (int j = 0; j < userNumber.length; j++) {
@@ -19,7 +19,8 @@ public class Referee {
         return strike;
     }
 
-    public int getBallCount (int[] randomNumber, int[] userNumber) {
+
+    public int getBallCount(int[] randomNumber, int[] userNumber) {
         int ball = 0;
         for (int i = 0; i < randomNumber.length; i++) {
             for (int j = userNumber.length + 1; j > 0; j--) {
@@ -31,7 +32,8 @@ public class Referee {
         return ball;
     }
 
-    public int getOutCount (int[] randomNumber, int[] userCount) {
+
+    public int getOutCount(int[] randomNumber, int[] userCount) {
         int out = 0;
         int j = 0;
         for (int i = 0; i < randomNumber.length; i++) {
@@ -43,5 +45,12 @@ public class Referee {
     }
 
 
-
+    // 아래는 입력받은 문자열을 처리하는 과정 중 하나, 길이 판단.
+    public boolean lengthVerify (String input, int length) {
+        if (input.length() == length) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
