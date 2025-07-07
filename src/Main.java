@@ -12,11 +12,26 @@ public class Main {
         //NumberGenerator c = new NumberGenerator(); // NumberGenerator type 인 c 이름을 가진 variant를 선언 해주고 NumberGenerator 인스턴스화 해주고
         // 인스턴스 주소를 c 에 카피연산
 
+        //NumberGenerator g = new NumberGenerator();
+        //int[] test = g.getNumbers(4);
+
+
+        //System.out.println(Arrays.toString(test));
+
         NumberGenerator g = new NumberGenerator();
-        int[] test = g.getNumbers(4);
+        Receiver r = new Receiver();
+        Referee ref = new Referee();
+        Printer p = new Printer();
 
+        int length = r.askLength();
+        int[] randomNumber = g.getNumbers(length);
+        String input = r.askNumber();
+        int[] userNumber = r.convert(input);
 
-        System.out.println(Arrays.toString(test));
+        int strike = ref.getStrikeCount(randomNumber, userNumber);
+        int ball = ref.getBallCount(randomNumber, userNumber);
+        int out = ref.getOutCount(randomNumber, userNumber);
+        p.result(strike, ball, out);
     }
 }
 

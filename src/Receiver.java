@@ -22,7 +22,8 @@ public class Receiver {
 
     // 가장 기본적인 입력 받기
     public String askNumber() {
-        System.out.println("Please enter a number: ");
+        System.out.print("Please enter a number: ");
+        read.nextLine(); // consume leftover newline
         return read.nextLine();
     }
 
