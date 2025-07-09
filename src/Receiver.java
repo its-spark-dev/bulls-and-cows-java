@@ -6,25 +6,25 @@ public class Receiver {
 
     // 게임을 3자리로 할 지 4자리로 할 지 입력받기
     public int askLength() {
-        boolean flag = true;
-        while (flag) {
+        System.out.println("Do you want to play for 3 or 4?");
+        while (true) {
             System.out.print("Enter length: ");
             int length = read.nextInt();
             if (length == 3 || length == 4) {
                 return length;
             } else {
                 System.out.println("Invalid length");
-                flag = false;
+                System.out.println("Number must be 3 or 4");
             }
         }
-        return 0;
     }
 
     // 가장 기본적인 입력 받기
     public String askNumber() {
         System.out.print("Please enter a number: ");
-        read.nextLine(); // consume leftover newline
-        return read.nextLine();
+        String num = read.next();
+        // System.out.println("[DEBUG]: " + num);
+        return num;
     }
 
 

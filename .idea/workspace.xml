@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fdce6be-ece7-4ac4-a421-8563e98f23e3" name="Changes" comment="Add method to print win message">
+    <list default="true" id="1fdce6be-ece7-4ac4-a421-8563e98f23e3" name="Changes" comment="fix: Correct game logic and fix ArrayIndexOutOfBoundsException&#10;&#10;- Fix strike count logic to only match numbers in same position&#10;- Fix ball count calculation to prevent array bounds exception&#10;- Improve out count calculation for better accuracy&#10;- Add input buffer handling in Receiver&#10;- Simplify length verification method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Referee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Referee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,26 +47,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/kimcharming/git/bulls-and-cows-java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/kimcharming/IdeaProjects/NumberBaseball/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/kimcharming/git/bulls-and-cows-java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/kimcharming/IdeaProjects/NumberBaseball/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -101,7 +101,9 @@
       <workItem from="1747080942620" duration="19284000" />
       <workItem from="1751006298458" duration="1519000" />
       <workItem from="1751378473645" duration="9284000" />
-      <workItem from="1751875684885" duration="1504000" />
+      <workItem from="1751875684885" duration="2873000" />
+      <workItem from="1752030779997" duration="2539000" />
+      <workItem from="1752035529122" duration="4561000" />
     </task>
     <task id="LOCAL-00001" summary="Add methods to validate String length and convert to int array">
       <option name="closed" value="true" />
@@ -135,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751451461390</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: Correct game logic and fix ArrayIndexOutOfBoundsException&#10;&#10;- Fix strike count logic to only match numbers in same position&#10;- Fix ball count calculation to prevent array bounds exception&#10;- Improve out count calculation for better accuracy&#10;- Add input buffer handling in Receiver&#10;- Simplify length verification method">
+      <option name="closed" value="true" />
+      <created>1751877202585</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751877202585</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +156,7 @@
     <MESSAGE value="Add method to prompt and validate game length input" />
     <MESSAGE value="Add method to display victory message" />
     <MESSAGE value="Add method to print win message" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add method to print win message" />
+    <MESSAGE value="fix: Correct game logic and fix ArrayIndexOutOfBoundsException&#10;&#10;- Fix strike count logic to only match numbers in same position&#10;- Fix ball count calculation to prevent array bounds exception&#10;- Improve out count calculation for better accuracy&#10;- Add input buffer handling in Receiver&#10;- Simplify length verification method" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Correct game logic and fix ArrayIndexOutOfBoundsException&#10;&#10;- Fix strike count logic to only match numbers in same position&#10;- Fix ball count calculation to prevent array bounds exception&#10;- Improve out count calculation for better accuracy&#10;- Add input buffer handling in Receiver&#10;- Simplify length verification method" />
   </component>
 </project>

@@ -26,6 +26,10 @@ public class Main {
         int length = r.askLength();
         int[] randomNumber = g.getNumbers(length);
         String input = r.askNumber();
+        while (!ref.lengthVerify(input, length)) {
+            System.out.println("Invalid input");
+            input = r.askNumber();
+        }
         int[] userNumber = r.convert(input);
 
         int strike = ref.getStrikeCount(randomNumber, userNumber);
