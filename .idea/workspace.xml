@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1fdce6be-ece7-4ac4-a421-8563e98f23e3" name="Changes" comment="refactor: Simplify game win condition logic&#10;&#10;- Replace separate conditions with dynamic length-based win check&#10;- Remove redundant code blocks&#10;- Improve code maintainability" />
+    <list default="true" id="1fdce6be-ece7-4ac4-a421-8563e98f23e3" name="Changes" comment="chore: Update .gitignore to exclude IDE files&#10;&#10;- Add .idea directory to gitignore&#10;- Improve project cleanliness by excluding IDE-specific files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +99,7 @@
       <workItem from="1751378473645" duration="9284000" />
       <workItem from="1751875684885" duration="2873000" />
       <workItem from="1752030779997" duration="2539000" />
-      <workItem from="1752035529122" duration="8938000" />
+      <workItem from="1752035529122" duration="9180000" />
     </task>
     <task id="LOCAL-00001" summary="Add methods to validate String length and convert to int array">
       <option name="closed" value="true" />
@@ -181,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752135575579</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="chore: Update .gitignore to exclude IDE files&#10;&#10;- Add .idea directory to gitignore&#10;- Improve project cleanliness by excluding IDE-specific files">
+      <option name="closed" value="true" />
+      <created>1752135869745</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1752135869745</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +206,7 @@
     <MESSAGE value="fix: Correct attempt count calculation in game result&#10;&#10;- Reset inning counter initial value to 1&#10;- Adjust win message to show correct attempt count" />
     <MESSAGE value="feat: Add support for different game lengths&#10;&#10;- Separate win conditions for 3-digit and 4-digit games&#10;- Add conditional logic to handle different game lengths" />
     <MESSAGE value="refactor: Simplify game win condition logic&#10;&#10;- Replace separate conditions with dynamic length-based win check&#10;- Remove redundant code blocks&#10;- Improve code maintainability" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: Simplify game win condition logic&#10;&#10;- Replace separate conditions with dynamic length-based win check&#10;- Remove redundant code blocks&#10;- Improve code maintainability" />
+    <MESSAGE value="chore: Update .gitignore to exclude IDE files&#10;&#10;- Add .idea directory to gitignore&#10;- Improve project cleanliness by excluding IDE-specific files" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: Update .gitignore to exclude IDE files&#10;&#10;- Add .idea directory to gitignore&#10;- Improve project cleanliness by excluding IDE-specific files" />
   </component>
 </project>
