@@ -25,17 +25,24 @@ public class Main {
 
         int length = r.askLength();
         int[] randomNumber = g.getNumbers(length);
-        String input = r.askNumber();
-        while (!ref.lengthVerify(input, length)) {
-            System.out.println("Invalid input");
-            input = r.askNumber();
-        }
-        int[] userNumber = r.convert(input);
+        System.out.println("* [DEBUG: ]" + Arrays.toString(randomNumber) + " *");
 
-        int strike = ref.getStrikeCount(randomNumber, userNumber);
-        int ball = ref.getBallCount(randomNumber, userNumber);
-        int out = ref.getOutCount(randomNumber, userNumber);
-        p.result(strike, ball, out);
+        int strike = 0;
+
+        while (strike != 3) {
+            String input = r.askNumber();
+            while (!ref.lengthVerify(input, length)) {
+                System.out.println("Invalid input");
+                input = r.askNumber();
+            }
+            int[] userNumber = r.convert(input);
+
+            strike = ref.getStrikeCount(randomNumber, userNumber);
+            int ball = ref.getBallCount(randomNumber, userNumber);
+            int out = ref.getOutCount(randomNumber, userNumber);
+            p.result(strike, ball, out);
+        }
+        p.displayWin();
     }
 }
 
