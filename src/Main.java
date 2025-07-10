@@ -29,35 +29,18 @@ public class Main {
 
         int strike = 0;
 
-
-        if (length == 3) {
-            while (strike != 3) {
-                String input = r.askNumber();
-                while (!ref.lengthVerify(input, length)) {
-                    System.out.println("Invalid input");
-                    input = r.askNumber();
-                }
-                int[] userNumber = r.convert(input);
-
-                strike = ref.getStrikeCount(randomNumber, userNumber);
-                int ball = ref.getBallCount(randomNumber, userNumber);
-                int out = ref.getOutCount(randomNumber, userNumber);
-                p.result(strike, ball, out);
+        while (strike != length) {
+            String input = r.askNumber();
+            while (!ref.lengthVerify(input, length)) {
+                System.out.println("Invalid input");
+                input = r.askNumber();
             }
-        } else {
-            while (strike != 4) {
-                String input = r.askNumber();
-                while (!ref.lengthVerify(input, length)) {
-                    System.out.println("Invalid input");
-                    input = r.askNumber();
-                }
-                int[] userNumber = r.convert(input);
+            int[] userNumber = r.convert(input);
 
-                strike = ref.getStrikeCount(randomNumber, userNumber);
-                int ball = ref.getBallCount(randomNumber, userNumber);
-                int out = ref.getOutCount(randomNumber, userNumber);
-                p.result(strike, ball, out);
-            }
+            strike = ref.getStrikeCount(randomNumber, userNumber);
+            int ball = ref.getBallCount(randomNumber, userNumber);
+            int out = ref.getOutCount(randomNumber, userNumber);
+            p.result(strike, ball, out);
         }
 
         p.displayWin();
