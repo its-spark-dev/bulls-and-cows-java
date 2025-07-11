@@ -4,7 +4,6 @@ public class Receiver {
 
     Scanner read = new Scanner(System.in);
 
-    // 게임을 3자리로 할 지 4자리로 할 지 입력받기
     public int askLength() {
         System.out.println("Do you want to play for 3 or 4?");
         while (true) {
@@ -19,17 +18,16 @@ public class Receiver {
         }
     }
 
-    // 가장 기본적인 입력 받기
     public String askNumber() {
         System.out.print("Please enter a number: ");
         String num = read.next();
-        // System.out.println("[DEBUG]: " + num);
         return num;
     }
 
-
-    // 길이 체크가 완료된 후 문자열을 int[]로 변환
-    // functional programming applied
+    /*
+     * Convert String input to int array
+     * Functional programming applied
+     */
     public int[] convert(String input) {
         int[] numbers =
                 input

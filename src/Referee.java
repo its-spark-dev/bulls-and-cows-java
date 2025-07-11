@@ -1,4 +1,5 @@
 public class Referee {
+
     public int getStrikeCount(int[] randomNumber, int[] userNumber) {
         int strike = 0;
         for (int i = 0; i < randomNumber.length; i++) {
